@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dietSkuy versi Indo</string>
+    <string name="dietskuy">DietSkuy versi indo</string>
+    <string name="_10_minutes_workout">10-menit-workout</string>
+    <string name="new_journal">Jurnal Baru</string>
+    <string name="list_journal">Daftar Jurnal</string>
+    <string name="change_language">Ganti Bahasa</string>
+</resources>
