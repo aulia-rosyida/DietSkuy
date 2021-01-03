@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class WorkoutActivity extends AppCompatActivity {
     private TextView countdownText;
     private Button countdownButton;
+    private Button resetButton;
 
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliSeconds = 600000; //10 menit
@@ -28,6 +29,18 @@ public class WorkoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startStop();
+            }
+        });
+
+        updateTime();
+
+        resetButton = findViewById(R.id.reset_button);
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timeLeftInMilliSeconds = 600000;
+                stopTimer();
+                updateTime();
             }
         });
     }
@@ -69,8 +82,9 @@ public class WorkoutActivity extends AppCompatActivity {
         int seconds = (int) timeLeftInMilliSeconds % 60000 / 1000;
 
         String timeLeftText;
-        
-        timeLeftText = "0" + minutes;
+
+        timeLeftText = "" + minutes;
+        if(minutes < 10) timeLeftText="0" + minutes;
         timeLeftText += ":";
         if(seconds < 10) timeLeftText+="0";
         timeLeftText += seconds;
