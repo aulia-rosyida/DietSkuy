@@ -12,4 +12,6 @@
     <string name="pause">Jeda</string>
     <string name="pick_alarm_time">Buat Pengingat</string>
     <string name="reminder_text">Alarm Belum Dibuat</string>
+    <string name="workoutSkuy">Workout Skuy!</string>
+    <string name="cancel_alarm">Batalkan Alarm</string>
 </resources>

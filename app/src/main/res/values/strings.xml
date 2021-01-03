@@ -12,4 +12,5 @@
     <string name="pause">Pause</string>
     <string name="pick_alarm_time">Make Reminder</string>
     <string name="reminder_text">Alarm Not Set</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
 </resources>
