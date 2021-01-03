@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">dietSkuy @Eng</string>
-    <string name="dietskuy">DietSkuy @Eng</string>
+    <string name="dietskuy">"DietSkuy "</string>
     <string name="_10_minutes_workout">10-minutes-workout</string>
     <string name="new_journal">New Journal</string>
     <string name="list_journal">List Journal</string>
     <string name="change_language">Change Language</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="timer">00:00</string>
 </resources>
