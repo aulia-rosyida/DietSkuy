@@ -2,7 +2,11 @@ package id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -14,11 +18,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.lang.String;
-import android.util.Log;
 
 public class WorkoutActivity extends AppCompatActivity {
     private TextView countdownText, reminderText;
-    private Button countdownButton, resetButton, pickerButton;
+    private Button countdownButton, resetButton, pickerButton, cancelButton;
 
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliSeconds = 600000; //10 menit
@@ -72,14 +75,8 @@ public class WorkoutActivity extends AppCompatActivity {
                                 Calendar calendar = Calendar.getInstance();
                                 calendar.set(0,0,0, reminderHour, reminderMinute);
 
-                                //set selected time on text view
-                                DateFormat dateFormat = new SimpleDateFormat("hh.mm aa");
-                                String timeString = dateFormat.format(calendar.getTime());
-                                reminderText.setText(timeString);
-                                Log.d("TAG", "masukkkkkk ke on timeset");
-                                Log.d("TAG", timeString);
-                                System.out.println(timeString);
-
+                                updateTimeText(calendar);
+                                startAlarm(calendar);
                             }
                         }, 12, 0, false
                 );
@@ -88,6 +85,41 @@ public class WorkoutActivity extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+
+        cancelButton = findViewById(R.id.cancel_button);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View view) {
+                cancelAlarm();
+            }
+       });
+    }
+
+    private void cancelAlarm() {
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, AlertReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+
+        alarmManager.cancel(pendingIntent);
+        reminderText.setText("Alarm canceled");
+    }
+
+    private void updateTimeText(Calendar calendar) {
+        //set selected time on text view
+        DateFormat dateFormat = new SimpleDateFormat("hh.mm aa");
+        String timeString = "Alarm set for:";
+        timeString += dateFormat.format(calendar.getTime());
+        reminderText.setText(timeString);
+    }
+
+    private void startAlarm(Calendar c) {
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(this, AlertReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
+        if (c.before(Calendar.getInstance())) {
+            c.add(Calendar.DATE, 1);
+        }
+        alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
     }
 
     public void startStop() {

@@ -13,4 +13,8 @@
     <string name="pick_alarm_time">Make Reminder</string>
     <string name="reminder_text">Alarm Not Set</string>
     <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="noti_channel_default">Default: Dont forget to 10-minutes-workout !</string>
+    <string name="noti_channel_second">Secondary: Dont forget to 10-minutes-workout !</string>
+    <string name="alarm_set_title">Alarm Set !</string>
+    <string name="alarm_set_body">Your alarm manager is working</string>
 </resources>

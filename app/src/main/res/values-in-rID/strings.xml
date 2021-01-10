@@ -14,4 +14,8 @@
     <string name="reminder_text">Alarm Belum Dibuat</string>
     <string name="workoutSkuy">Workout Skuy!</string>
     <string name="cancel_alarm">Batalkan Alarm</string>
+    <string name="noti_channel_default">Default: Jangan lupa 10-menit workout !</string>
+    <string name="noti_channel_second">Secondary: Jangan lupa 10-menit workout !</string>
+    <string name="alarm_set_title">Alarm di set !</string>
+    <string name="alarm_set_body">Alarm manager mu sudah berfungsi</string>
 </resources>
