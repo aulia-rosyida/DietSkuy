@@ -33,7 +33,7 @@ public class NotificationHelper extends ContextWrapper {
     public NotificationCompat.Builder getChannelNotification() {
         return new NotificationCompat.Builder(getApplicationContext(), channelID)
                 .setContentTitle(getApplicationContext().getResources().getString(R.string.alarm_set_title))
-                .setContentText(getApplicationContext().getResources().getString(R.string.alarm_set_title))
+                .setContentText(getApplicationContext().getResources().getString(R.string.alarm_set_body))
                 .setSmallIcon(R.drawable.ic_baseline_more_vert_24);
     }
 }
