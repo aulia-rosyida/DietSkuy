@@ -16,6 +16,8 @@
     <string name="cancel_alarm">Batalkan Alarm</string>
     <string name="noti_channel_default">Default: Jangan lupa 10-menit workout !</string>
     <string name="noti_channel_second">Secondary: Jangan lupa 10-menit workout !</string>
-    <string name="alarm_set_title">Alarm di set !</string>
-    <string name="alarm_set_body">Alarm manager mu sudah berfungsi</string>
+    <string name="alarm_set_title">Jangan lupa :)</string>
+    <string name="alarm_set_body">Untuk Workout hari ini yaaa</string>
+    <string name="boot_complete">Boot Selesai</string>
+    <string name="connectivity_changed">Koneksi berubah</string>
 </resources>
