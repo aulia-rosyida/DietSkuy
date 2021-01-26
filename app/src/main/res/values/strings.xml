@@ -15,6 +15,8 @@
     <string name="cancel_alarm">Cancel Alarm</string>
     <string name="noti_channel_default">Default: Dont forget to 10-minutes-workout !</string>
     <string name="noti_channel_second">Secondary: Dont forget to 10-minutes-workout !</string>
-    <string name="alarm_set_title">Alarm Set !</string>
-    <string name="alarm_set_body">Your alarm manager is working</string>
+    <string name="alarm_set_title">Reminder :)</string>
+    <string name="alarm_set_body">Dont forget to Workout</string>
+    <string name="boot_complete">Boot Completed</string>
+    <string name="connectivity_changed">Connectivity Changed</string>
 </resources>
