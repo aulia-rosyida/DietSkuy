@@ -14,13 +14,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.ListJurnalActivity;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.R;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.WorkoutActivity;
 
 public class MainFragment extends Fragment {
 
     private MainViewModel mViewModel;
-    Button b1;
+    Button b1, b2;
 
     public static MainFragment newInstance() {
         return new MainFragment();
@@ -33,10 +34,17 @@ public class MainFragment extends Fragment {
         View v = inflater.inflate(R.layout.main_fragment, container, false);
 
         b1 = v.findViewById(R.id.workout_button);
+        b2 = v.findViewById(R.id.list_button);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), WorkoutActivity.class));
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ListJurnalActivity.class));
             }
         });
         return v;
