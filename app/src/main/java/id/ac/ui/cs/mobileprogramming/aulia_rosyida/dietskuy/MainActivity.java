@@ -24,11 +24,14 @@ import java.util.Locale;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
+    // private OpenGLView openGLView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        // openGLView = findViewById(R.id.openGLView);
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, MainFragment.newInstance())
@@ -41,4 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // @Override
+    // protected void onResume() {
+    //     super.onResume();
+    //     openGLView.onResume();
+    // }
+
+    // @Override
+    // protected void onPause() {
+    //     super.onPause();
+    //     openGLView.onPause();
+    // }
 }

@@ -4,4 +4,11 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+    <!-- <id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.OpenGLView
+        android:id="@+id/openGLView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/> -->
+
+</FrameLayout>
