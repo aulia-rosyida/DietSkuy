@@ -19,4 +19,6 @@
     <string name="alarm_set_body">Dont forget to Workout</string>
     <string name="boot_complete">Boot Completed</string>
     <string name="connectivity_changed">Connectivity Changed</string>
+    <string name="monday">Monday</string>
+    <string name="monday_activity">Running to keep healthy</string>
 </resources>

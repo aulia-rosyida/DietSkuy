@@ -20,4 +20,6 @@
     <string name="alarm_set_body">Untuk Workout hari ini yaaa</string>
     <string name="boot_complete">Boot Selesai</string>
     <string name="connectivity_changed">Koneksi berubah</string>
+    <string name="monday">Senin</string>
+    <string name="monday_activity">Lari pagi untuk lebih sehat</string>
 </resources>
