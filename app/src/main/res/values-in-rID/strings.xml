@@ -27,4 +27,8 @@
     <string name="add">Tambah</string>
     <string name="choose_image">Pilih Foto</string>
     <string name="explanation_denied_permission">Anda tidak memberikan izin untuk mengakses gallery, sehingga tidak dapat melanjutkan untuk memilih foto. Mohon maaf. Jika berubah pikiran, silahkan memberikan izin untuk mengakses gallery dan Anda dapat mengubah foto sesuai yang diinginkan. Terima kasih atas perhatian Anda :)</string>
+    <string name="oops">Oops :")</string>
+    <string name="no_internet_connection">Tidak ada koneksi internet</string>
+    <string name="check_internet_connection">Tolong cek koneksi internet Anda</string>
+    <string name="retry">Ulangi</string>
 </resources>

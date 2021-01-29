@@ -26,4 +26,8 @@
     <string name="add">add</string>
     <string name="choose_image">Choose Image</string>
     <string name="explanation_denied_permission">You\'re denied permission to access gallery, we couldn\'t pick the image right now. Sorry. If you\'re changes your mind, you can give permission to access your gallery and change the image for this application. Thank you for your attention :)</string>
+    <string name="oops">Oops :")</string>
+    <string name="no_internet_connection">No internet connections</string>
+    <string name="check_internet_connection">Please check your internet connection</string>
+    <string name="retry">Retry</string>
 </resources>
