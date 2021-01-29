@@ -21,4 +21,7 @@
     <string name="connectivity_changed">Connectivity Changed</string>
     <string name="monday">Monday</string>
     <string name="monday_activity">Running to keep healthy</string>
+    <string name="input_category">Input Category</string>
+    <string name="enter_text">Enter new category</string>
+    <string name="add">add</string>
 </resources>

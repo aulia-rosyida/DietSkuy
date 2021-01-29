@@ -22,4 +22,7 @@
     <string name="connectivity_changed">Koneksi berubah</string>
     <string name="monday">Senin</string>
     <string name="monday_activity">Lari pagi untuk lebih sehat</string>
+    <string name="input_category">Input Kategori</string>
+    <string name="enter_text">Masukan Category</string>
+    <string name="add">Tambah</string>
 </resources>
