@@ -24,4 +24,6 @@
     <string name="input_category">Input Category</string>
     <string name="enter_text">Enter new category</string>
     <string name="add">add</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="explanation_denied_permission">You\'re denied permission to access gallery, we couldn\'t pick the image right now. Sorry. If you\'re changes your mind, you can give permission to access your gallery and change the image for this application. Thank you for your attention :)</string>
 </resources>

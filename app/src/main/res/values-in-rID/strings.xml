@@ -25,4 +25,6 @@
     <string name="input_category">Input Kategori</string>
     <string name="enter_text">Masukan Category</string>
     <string name="add">Tambah</string>
+    <string name="choose_image">Pilih Foto</string>
+    <string name="explanation_denied_permission">Anda tidak memberikan izin untuk mengakses gallery, sehingga tidak dapat melanjutkan untuk memilih foto. Mohon maaf. Jika berubah pikiran, silahkan memberikan izin untuk mengakses gallery dan Anda dapat mengubah foto sesuai yang diinginkan. Terima kasih atas perhatian Anda :)</string>
 </resources>
