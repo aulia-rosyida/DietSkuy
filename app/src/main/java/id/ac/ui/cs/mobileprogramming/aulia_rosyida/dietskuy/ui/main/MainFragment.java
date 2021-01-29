@@ -16,12 +16,13 @@ import android.widget.Button;
 
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.ListJurnalActivity;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.R;
+import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.RoomDatabaseCategory;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.WorkoutActivity;
 
 public class MainFragment extends Fragment {
 
     private MainViewModel mViewModel;
-    Button b1, b2;
+    Button b1, b2, b3;
 
     public static MainFragment newInstance() {
         return new MainFragment();
@@ -35,6 +36,8 @@ public class MainFragment extends Fragment {
 
         b1 = v.findViewById(R.id.workout_button);
         b2 = v.findViewById(R.id.list_button);
+        b3 = v.findViewById(R.id.new_journal_button);
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +50,13 @@ public class MainFragment extends Fragment {
                 startActivity(new Intent(getActivity(), ListJurnalActivity.class));
             }
         });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), RoomDatabaseCategory.class));
+            }
+        });
+
         return v;
     }
 
