@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.ListJurnalActivity;
+import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.NewJurnalActivity;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.R;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.RoomDatabaseCategory;
 import id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy.WorkoutActivity;
@@ -53,7 +54,7 @@ public class MainFragment extends Fragment {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), RoomDatabaseCategory.class));
+                startActivity(new Intent(getActivity(), NewJurnalActivity.class));
             }
         });
 
