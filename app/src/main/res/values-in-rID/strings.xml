@@ -32,4 +32,12 @@
     <string name="check_internet_connection">Tolong cek koneksi internet Anda</string>
     <string name="retry">Ulangi</string>
     <string name="ok">ok</string>
+    <string name="add_name">+ Tambah Nama</string>
+    <string name="add_category">+ Tambah Kategori</string>
+    <string name="what_s_going_on_today">Ada apa hari ini...</string>
+    <string name="tell_something">Cerita hari ini...</string>
+    <string name="submit">Submit</string>
+    <string name="choosed_quote">Quote hari ini...</string>
+    <string name="get_quote">quote of the day</string>
+    <string name="my_quotes_today">Quotesku hari ini</string>
 </resources>
