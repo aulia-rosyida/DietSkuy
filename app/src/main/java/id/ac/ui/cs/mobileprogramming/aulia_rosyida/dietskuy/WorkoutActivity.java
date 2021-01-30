@@ -24,11 +24,10 @@ import java.lang.String;
 public class WorkoutActivity extends AppCompatActivity {
     private TextView countdownText, reminderText;
     private Button countdownButton, resetButton, pickerButton, cancelButton;
-
     private CountDownTimer countDownTimer;
     private long timeLeftInMilliSeconds = 600000; //10 menit
     private boolean timerRunning;
-
+    private OpenGLView openGLView, openGLView2;
     int reminderHour, reminderMinute;
 
     @Override
@@ -36,6 +35,8 @@ public class WorkoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workout);
 
+        openGLView = (OpenGLView) findViewById(R.id.openGLView);
+        openGLView2 = (OpenGLView) findViewById(R.id.openGLView2);
         countdownText = findViewById(R.id.timer);
         countdownButton = findViewById(R.id.start_button);
         countdownButton.setOnClickListener(new View.OnClickListener() {
@@ -95,6 +96,20 @@ public class WorkoutActivity extends AppCompatActivity {
                 cancelAlarm();
             }
        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        openGLView.onResume();
+        openGLView2.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        openGLView.onPause();
+        openGLView2.onPause();
     }
 
     private void cancelAlarm() {
