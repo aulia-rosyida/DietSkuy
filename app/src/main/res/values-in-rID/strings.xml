@@ -31,4 +31,5 @@
     <string name="no_internet_connection">Tidak ada koneksi internet</string>
     <string name="check_internet_connection">Tolong cek koneksi internet Anda</string>
     <string name="retry">Ulangi</string>
+    <string name="ok">ok</string>
 </resources>

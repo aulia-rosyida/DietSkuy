@@ -30,4 +30,5 @@
     <string name="no_internet_connection">No internet connections</string>
     <string name="check_internet_connection">Please check your internet connection</string>
     <string name="retry">Retry</string>
+    <string name="ok">ok</string>
 </resources>
