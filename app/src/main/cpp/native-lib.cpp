@@ -4,13 +4,16 @@
 
 #include <jni.h>
 #include <string>
+#include <string.h>
 
 extern "C"
 JNIEXPORT jint JNICALL
-java_id_ac_ui_cs_mobileprogramming_aulia_rosyida_dietskuy_NewJurnalActivity_getTxtLen
-    (JNIEnv *env, jobject instance, jstring txt_) {
-    const char *txt = env->GetStringUTFChars(txt_, 0);
-    int len = strLen(txt);
+Java_id_ac_ui_cs_mobileprogramming_aulia_1rosyida_dietskuy_NewJurnalActivity_getTxtLen(JNIEnv *env,
+                                                                                       jobject thiz,
+                                                                                       jstring txt) {
+    // TODO: implement getTxtLen()
+    const char* txt2 = env->GetStringUTFChars(txt, 0);
+    int len = strlen(txt2);
 
     return len;
 }
