@@ -1,4 +1,4 @@
-# utsTKTPL2020_1706025346
+# uts & uas TKTPL2020_1706025346
 
 # Nama
 Aulia Rosyida
