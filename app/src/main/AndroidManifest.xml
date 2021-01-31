@@ -17,7 +17,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewJurnalActivity"></activity>
+        <activity android:name=".FamilyDbActivity"></activity>
+        <activity android:name=".NewJurnalActivity" />
         <activity android:name=".RoomDatabaseCategory" />
         <activity android:name=".ListJurnalActivity" />
         <activity android:name=".WorkoutActivity" />
@@ -30,6 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".FamilyContentProvider"
+            android:authorities="id.ac.ui.cs.mobileprogramming.aulia_rosyida.dietskuy"
+            android:exported="false" />
 
         <receiver android:name=".AlertReceiver" />
     </application>
